@@ -24,11 +24,11 @@ Build the image:
 
 Run the container:
 
-    docker run -e "DUOLINGO_JWT=The jwt value" -e 'LESSONS=the number of lessons you want to run' -e 'CRONTIME=the crontime' my-duo-app
+    docker run -e "DUOLINGO_JWT=The jwt value" -e 'LESSONS=the number of lessons you want to run' -e 'CRONTIME=the crontime' duo:latest
 
 Or run with a .env file:
 
-    docker run --env-file .env my-duo-app
+    docker run --env-file .env duo:latest
 
 
 ## Caveats
